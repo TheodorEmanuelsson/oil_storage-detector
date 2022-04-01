@@ -4,10 +4,10 @@
 
 This dataset is available at [Kaggle](https://www.kaggle.com/datasets/airbusgeo/airbus-oil-storage-detection-dataset) and contains 98 extract of SPOT imagery at roughly 1.2 meters resolution. Each each image is stored as a JPEG file of size 2560 x 2560 pixels (i.e. 3 kilometers on ground). The locations are selected worldwide. Accompanying the images are annotated polygons which are used in the output layer. There is only one class in the dataset, *oil-storage-tank* but it is modelled as two classes, one being the storage tank and another being background.
 
-**Training sample**
+*Training sample*
 ![oil-storage-sample](https://user-images.githubusercontent.com/49917684/161306246-8cb6b416-cbd5-41d3-826a-f65789552cc3.jpg)
 
-**Training sample with annotated bounding boxes**
+*Training sample with annotated bounding boxes*
 ![oil-storage-sample_annotated](https://user-images.githubusercontent.com/49917684/161306251-b7f00221-e27c-442e-82df-9c8c32f9b1b5.jpg)
 
 Since the images are rather large (computationally expensive to train), they are cropped into 512x512 images with 64 pixel overlappes. This resulted in 468 cropped training images and 120 cropped valiation images. There are also 6 test images 5 which are not annotated but could be used to visually test a model on new - unseen before - images.
