@@ -19,22 +19,24 @@ The [YOLOv5](https://github.com/ultralytics/yolov5) model is used with pretraine
 
 ## Training
 
-The model was trained for 50 epochs with a batch size of 32 using SGD
+The model was trained for 150 epochs with a batch size of 32 using SGD
 
 *Precision-Recall curve*
-![PR_curve](https://user-images.githubusercontent.com/49917684/161307349-95cfcc5f-a78a-460a-977a-3b96decfd51d.png)
+
+![PR_curve](https://user-images.githubusercontent.com/49917684/162888831-eace19af-a2b6-4e66-a878-bd6c43bdca7d.png)
 
 *Training metrics over epochs*
-![results](https://user-images.githubusercontent.com/49917684/161307450-9f2328d5-8d0f-4b9b-8b64-b9bb01b7aa50.png)
+
+![results](https://user-images.githubusercontent.com/49917684/162888855-66d1c059-2170-4d85-b87c-10b53f6ee327.png)
 
 ## Prediction
 
-Using a confidence cutoff of 0.5, the following results was achieved. As can be seen in the second image, it misclassifies some circular patches of grass to be storage tanks. This could be improved upon by training for more epochs or setting the prediction confidence to be higher, as these two examples only had a probability of 0.6 to be a storage tank.
+Using a confidence cutoff of 0.65, the following results was achieved.
 
 *Snowy image with few storage tanks*
-![67f7c7ad-11a1-4c7f-9f2a-da7ef50bfdd8](https://user-images.githubusercontent.com/49917684/161307579-8902d8c5-efac-477e-9a5d-fe44c0e3944b.jpg)
+
+![67f7c7ad-11a1-4c7f-9f2a-da7ef50bfdd8](https://user-images.githubusercontent.com/49917684/162888583-d0ecc2e0-d1c6-40a1-8e92-eee473686a13.jpg)
 
 *Image with lots of storage tanks*
-![605ffac0-69d5-4748-92c2-48d43f51afc1](https://user-images.githubusercontent.com/49917684/161307636-fdd5c996-4da2-4f2b-8e85-3afd580c91bb.jpg)
 
-
+![605ffac0-69d5-4748-92c2-48d43f51afc1](https://user-images.githubusercontent.com/49917684/162888616-48ef1f11-0b74-410d-944a-40e647bc3021.jpg)
